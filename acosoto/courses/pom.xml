@@ -15,8 +15,8 @@
   <name>courses</name>
   <description>courses</description>
   <modules>
-    <module>courses_CAR</module>
     <module>courses_ESB</module>
+    <module>courses_CAR</module>
   </modules>
   <build>
     <plugins>

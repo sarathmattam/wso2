@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="users" groupId="com.example.userApis.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/api/users.xml</file>
+    <artifact name="users_API" groupId="com.acosoto.integrations.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/users_API.xml</file>
     </artifact>
 </artifacts>

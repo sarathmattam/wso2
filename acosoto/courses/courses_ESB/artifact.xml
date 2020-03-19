@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="courses" groupId="com.example.courseApis.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/api/courses.xml</file>
+    <artifact name="course_API" groupId="com.acosoto.integrations.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/course_API.xml</file>
     </artifact>
 </artifacts>

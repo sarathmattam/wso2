@@ -15,8 +15,8 @@
   <name>users</name>
   <description>users</description>
   <modules>
-    <module>users_CAR</module>
     <module>users_ESB</module>
+    <module>users_CAR</module>
   </modules>
   <build>
     <plugins>

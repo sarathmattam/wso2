@@ -9,8 +9,8 @@
   <name>acosoto</name>
   <description>acosoto</description>
   <modules>
-    <module>users</module>
     <module>courses</module>
+    <module>users</module>
   </modules>
   <build>
     <plugins>
