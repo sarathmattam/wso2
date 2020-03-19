@@ -8,7 +8,7 @@
     <version>1.0.0</version>
     <relativePath>..\pom.xml</relativePath>
   </parent>
-  <groupId>com.example.users_CAR</groupId>
+  <groupId>com.acosoto.integrations</groupId>
   <artifactId>users_CAR</artifactId>
   <version>1.0.0</version>
   <packaging>carbon/application</packaging>
@@ -20,7 +20,7 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.example.userApis.api</groupId>
+      <groupId>com.acosoto.integrations.api</groupId>
       <artifactId>users</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
