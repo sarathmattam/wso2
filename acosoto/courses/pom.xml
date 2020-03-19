@@ -16,6 +16,7 @@
   <description>courses</description>
   <modules>
     <module>courses_CAR</module>
+    <module>courses_ESB</module>
   </modules>
   <build>
     <plugins>
