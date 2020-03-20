@@ -4,7 +4,7 @@
         <inSequence>
             <payloadFactory media-type="json">
                 <format>{&#xd;
-"Message" : "Hello from COURSES API version 2.0..Git version ...."&#xd;
+"Message" : "Hello from COURSES API version 2.0..Git version ....."&#xd;
 }</format>
                 <args/>
             </payloadFactory>
