@@ -4,7 +4,7 @@
         <inSequence>
             <payloadFactory media-type="json">
                 <format>{&#xd;
-"Message" : "Hello from USER API version 2.0"&#xd;
+"Message" : "Hello from USER API version 3.0"&#xd;
 }</format>
                 <args/>
             </payloadFactory>
