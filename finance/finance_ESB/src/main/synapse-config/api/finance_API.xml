@@ -24,7 +24,7 @@
             <payloadFactory media-type="json">
                 <format>{&#xd;
 "version" : "1.0",&#xd;
-"message" : "Deployed via Jenkins"}</format>
+"message" : "Deployed via Jenkins."}</format>
                 <args/>
             </payloadFactory>
             <respond/>
