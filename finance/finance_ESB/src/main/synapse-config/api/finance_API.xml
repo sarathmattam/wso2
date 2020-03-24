@@ -23,8 +23,8 @@
             </call>  -->
             <payloadFactory media-type="json">
                 <format>{&#xd;
-"version" : "1.0",&#xd;
-"message" : "Deployed via Jenkins."}</format>
+"version" : "2.0",&#xd;
+"message" : "Automated deployment through jenkins pipeline"}</format>
                 <args/>
             </payloadFactory>
             <respond/>
