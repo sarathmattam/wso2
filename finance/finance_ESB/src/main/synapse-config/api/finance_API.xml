@@ -2,11 +2,14 @@
 <api context="/finance" name="finance_API" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET">
         <inSequence>
-            <property name="serviceFunction" scope="default" type="STRING" value="finance.serviceFunction"/>
-            <property name="apiKey" scope="default" type="STRING" value="finance.apiKey"/>
+            <property name="uri.var.serviceFunction" scope="default" type="STRING" value="finance.serviceFunction"/>
+            <property name="uri.var.apiKey" scope="default" type="STRING" value="finance.apiKey"/>
+            <property expression="get-property('query.param.fromCurr')" name="uri.var.fromCurr" scope="default" type="STRING"/>
+            <property expression="get-property('query.param.toCurr')" name="uri.var.toCurr" scope="default" type="STRING"/>
+            <property name="uri.var.targetURL" scope="default" type="STRING" value="finance.targetURL"/>
             <call>
                 <endpoint>
-                    <http method="get" uri-template="finance.targetURL">
+                    <http method="get" uri-template="{uri.var.targetURL}?function={uri.var.serviceFunction}&amp;from_currency={uri.var.fromCurr}&amp;to_currency={uri.var.toCurr}&amp;apikey={uri.var.apiKey}">
                         <suspendOnFailure>
                             <initialDuration>-1</initialDuration>
                             <progressionFactor>-1</progressionFactor>
@@ -18,6 +21,14 @@
                     </http>
                 </endpoint>
             </call>
+            <payloadFactory media-type="json">
+                <format>{&#xd;
+"version" : "1.0",&#xd;
+"message" : "$1"}</format>
+                <args>
+                    <arg evaluator="json" expression="$"/>
+                </args>
+            </payloadFactory>
             <respond/>
         </inSequence>
         <outSequence/>
