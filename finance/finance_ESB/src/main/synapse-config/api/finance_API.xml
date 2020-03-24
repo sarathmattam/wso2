@@ -7,7 +7,7 @@
             <property expression="get-property('query.param.fromCurr')" name="uri.var.fromCurr" scope="default" type="STRING"/>
             <property expression="get-property('query.param.toCurr')" name="uri.var.toCurr" scope="default" type="STRING"/>
             <property name="uri.var.targetURL" scope="default" type="STRING" value="finance.targetURL"/>
-            <call>
+            <!-- <call>
                 <endpoint>
                     <http method="get" uri-template="{uri.var.targetURL}?function={uri.var.serviceFunction}&amp;from_currency={uri.var.fromCurr}&amp;to_currency={uri.var.toCurr}&amp;apikey={uri.var.apiKey}">
                         <suspendOnFailure>
@@ -20,14 +20,12 @@
                         </markForSuspension>
                     </http>
                 </endpoint>
-            </call>
+            </call>  -->
             <payloadFactory media-type="json">
                 <format>{&#xd;
 "version" : "1.0",&#xd;
-"message" : "$1"}</format>
-                <args>
-                    <arg evaluator="json" expression="$"/>
-                </args>
+"message" : "Deployed via Jenkins"}</format>
+                <args/>
             </payloadFactory>
             <respond/>
         </inSequence>
